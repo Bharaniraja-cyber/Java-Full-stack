@@ -7,11 +7,15 @@
 </head>
 <body>
     <center>
-    <h1>Registration Page</h1>
-    <table border="4">
+    <h2>Registration Page</h2>
+    <table border="3">
         <tr>
         <th><label for="">Name</label></th> 
         <td><input type="text" placeholder="Enter your Name" required></td>
+        </tr>
+        <tr>
+            <th><label for="">Email</label></th> 
+            <td><input type="email" placeholder="bharani@gmail.com" required></td>
         </tr>
         <tr>
             <th><label for="">Date of Birth</label> </th> 
@@ -42,9 +46,33 @@
             <th><label for="">Password</label></th>
             <td><input type="password" placeholder="make it as strong" required></td>
         </tr>
+        <tr>
+            <th><label for="">Skills</label></th> 
+            <td><input type="checkbox">C <input type="checkbox">Java <input type="checkbox">Python</td>
+        </tr>
+        <tr>
+            <th><label for="">City</label></th>
+            <td>
+                <select>
+                    <option>Select</option>
+                    <option>Erode</option>
+                    <option>Madurai</option>
+                    <option>Trichy</option>
+                    <option>Karur</option>
+                    <option>Coimbatore</option>
+                    <option>Chennai</option>
+                    <option>Salem</option>
+                    <option>Namakkal</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="">Address</label></th>
+            <td><textarea placeholder="enter your Address" rows="4"></textarea></td>
+        </tr>
     </table>
     <br>
-    <input type="button" value="Register">&emsp;&emsp;&emsp; <input type="button" value="Reset">
+    <input type="button" value="Register">&emsp;&emsp; <input type="button" value="Reset">
     <br><br>
     <span>Already registered ?</span>
     <a href="loginpage.html">Login</a>
