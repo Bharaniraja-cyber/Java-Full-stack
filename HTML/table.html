@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
+    <style>
+        tr,td{
+            background-color: antiquewhite;
+        }
+        th{
+            background-color: lightgreen;
+        }
+        .one{
+            background-color: lightslategray;
+        }
+        .two{
+            background-color: lightpink;
+        }
+        .three{
+            background-color: lightcoral;
+        }
+        .four{
+            background-color: lightsalmon;
+        }
+    </style>
 </head>
 <body>
     <br><br>
     <br>
+    <center>
      <table border="3" width="90%" >
-        <tr height="40"><th colspan="6">Time Table</th></tr>
+        <tr height="40"><th colspan="6" class="one">Time Table</th></tr>
         <tr height="40">
-            <th rowspan="6">Hours</th><th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thu</th> <th>Fri</th>
+            <th rowspan="6" class="two">Hours</th><th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thu</th> <th>Fri</th>
         </tr>
         <tr align="center" height="40">
              <td>Science</td> <td>Maths</td> <td>Science</td> <td>Maths</td> <td>Arts</td>
@@ -19,13 +40,14 @@
         <tr align="center" height="40">
              <td>Science</td> <td>Maths</td> <td>Science</td> <td>Maths</td> <td>Arts</td>        
         </tr>
-        <tr height="40"><th colspan="5">Lunch</th></tr>
+        <tr height="40"><th colspan="5" class="three">Lunch</th></tr>
         <tr align="center" height="40">
-            <td>Science</td> <td>Maths</td> <td>Science</td> <td>Maths</td> <td rowspan="2">Project</td>
+            <td>Science</td> <td>Maths</td> <td>Science</td> <td>Maths</td> <td rowspan="2" class="four">Project</td>
         </tr>
         <tr align="center" height="40">
             <td>Science</td> <td>Maths</td> <td>Science</td> <td>Maths</td>
         </tr>
     </table>
+    </center>
 </body>
 </html>

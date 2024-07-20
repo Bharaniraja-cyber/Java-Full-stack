@@ -1,0 +1,16 @@
+*{
+    background-color: floralwhite;
+}
+.loginbutton{
+    background-color: bisque;
+    border: 2px solid rgb(213, 199, 71);
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+}
+.loginbutton:hover{
+    background-color: lightsalmon;
+}
+h3{
+    color: chocolate;
+}

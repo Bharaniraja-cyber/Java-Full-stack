@@ -1,0 +1,40 @@
+*{
+    background-color: aliceblue;
+}
+td{
+    background-color:aliceblue;
+}
+
+th{
+    background-color: aliceblue;
+    color: black;
+}
+
+.head{
+    background-color: bisque;
+}
+
+input:hover,textarea:hover,select:hover{
+    background-color: lightcoral;
+}
+
+input,textarea,select{
+    background-color: lightblue;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+.loginbutton{
+    background-color: bisque;
+    border: 2px solid khaki;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+}
+.loginbutton:hover{
+    background-color: olivedrab;
+}
+
+
+

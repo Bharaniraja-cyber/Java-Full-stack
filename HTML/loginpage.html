@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <style>
+        *{
+            background-color: aliceblue;
+        }
+        .one{
+            background-color: aliceblue;
+            width: 40%;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+        .loginbutton{
+            background-color: bisque;
+            border: 2px solid khaki;
+            border-radius: 20px;
+            width: 60px;
+            height: 30px;
+        }
+        .loginbutton:hover{
+            background-color: olivedrab;
+        }
+        h1{
+            color: brown;
+        }
+        input{
+            background-color: lightblue;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <br><br><br><br><br>
     <center>
-        <table border="2">
+        <div class="one">
+        <table>
             <tr><th colspan="2"><h1>Login page</h1></th></tr>
             <tr>
                 <th>Username</th> <td><input type="text" placeholder="Enter your Username" required></td>
@@ -17,11 +50,13 @@
                 <th>Password</th> <td><input type="password" placeholder=" enter your password" required></td>
             </tr>
         </table>
-        <br><br>
-        &emsp;<input type="button" value="Login"></td> &emsp;<td>&emsp;<input type="button" value="Reset">
+        
+        <br>
+        &emsp;<input type="button" class="loginbutton" value="Login"></td> &emsp;<td>&emsp;<input type="button" class="loginbutton" value="Reset">
         <br><br>
 <span>Don't have account !</span>
 <a href="registration.html">Register</a>
+</div>
 </center>
 </body>
 </html>
