@@ -1,0 +1,14 @@
+table,th,td{
+    border: 2px solid lightslategray;
+}
+.one{
+    background-color:brown;
+}
+tr{
+    background-color: lightblue;
+    height: 40px;
+    text-align: center;
+}
+td{
+    width: 20%;
+}

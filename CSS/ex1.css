@@ -1,0 +1,24 @@
+.one{
+    padding-left: 18px;
+    border: 2px solid red;
+    width: 60%;
+    height: 400px;
+    background-image:url(sky.jpg);
+    background-size: 100%;
+}
+.two{
+    border: 2px solid black;
+    padding-left: 10px;
+    margin: 20px;
+    width: 90%;
+    height: 60px;
+    background-color: lightcoral;
+}
+.three{
+    border: 2px solid black;
+    margin: 20px;
+    padding-left: 10px;
+    width: 90%;
+    height: 220px;
+    background-color: gold;
+}
