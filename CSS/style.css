@@ -1,13 +1,17 @@
-*{
-    background-color: aliceblue;
+body{
+    background-color: lightgray;
+    border: 2px solid gray;
+    height: 96vh;
 }
 td{
     background-color:aliceblue;
+    height: 3vh;
+    width: 20vw;
 }
-
 th{
     background-color: aliceblue;
     color: black;
+    width: 9vw;
 }
 
 .head{
@@ -20,6 +24,7 @@ input:hover,textarea:hover,select:hover{
 
 input,textarea,select{
     background-color: lightblue;
+    margin: 5px;
 }
 a{
     color: red;

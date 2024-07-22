@@ -2,28 +2,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: whitesmoke;
-    margin: 0;
+    
+    background-color: lightgray;
+    border: 2px solid gray;
+    height: 96vh;
     }
    
     .two{
         margin: 4px;
         padding: 4px;
         border: 3px solid black;
-        width: 40%;
+        width: 42%;
         height: 480px;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
     }
     .box{
         background-color: lightpink;
-        width: 60px;
+        width: 61px;
         height: 60px;
 
     }
     .king{
         background-color:black;
-        width: 60px;
+        width: 61px;
         height: 60px;
     }

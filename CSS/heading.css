@@ -1,4 +1,10 @@
-*{
-    background-color:rgb(67, 110, 154);
-    color:lavenderblush;
+body{
+    color: rgb(233, 73, 126);
+    border: 2px solid tomato;
+    height: 85vh;
+    background-image: url(cover1.jpg);
+    background-size: 100%;
+}
+h1{
+    font-style: italic;
 }

@@ -1,16 +1,25 @@
-*{
+body{
     background-color: floralwhite;
+    border: 2px solid gray;
+    height: 96vh;
 }
 .loginbutton{
     background-color: bisque;
     border: 2px solid rgb(213, 199, 71);
     border-radius: 20px;
-    width: 90px;
+    width: 100px;
     height: 30px;
+    background-image: url(violet.jpg);
+    color: white;
 }
 .loginbutton:hover{
     background-color: lightsalmon;
 }
 h3{
     color: chocolate;
+}
+#one{
+    padding: 20px;
+    margin-left: 20px;
+
 }
