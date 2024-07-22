@@ -1,8 +1,10 @@
 # Updated CSS for HTML files
 
-![Screenshot 2024-07-20 161406](https://github.com/user-attachments/assets/e0a04128-ad67-47b6-80bc-463feee6101f)
-![Screenshot 2024-07-20 161416](https://github.com/user-attachments/assets/d2adbdb1-852d-485e-b5d2-7813150f661e)
-![Screenshot 2024-07-20 161356](https://github.com/user-attachments/assets/aeac3b60-165e-4f19-9d8d-d91ded770693)
-![Screenshot 2024-07-22 111722](https://github.com/user-attachments/assets/99ab4246-528b-49b2-8616-03733b55653f)
-![Screenshot 2024-07-22 111709](https://github.com/user-attachments/assets/0db5428b-629c-4da8-a624-9d96e4d7c1e9)
-![Screenshot 2024-07-22 111657](https://github.com/user-attachments/assets/1f7f5666-ea0d-467f-9541-5bbe435e09c9)
+![Screenshot (79)](https://github.com/user-attachments/assets/37d59d6c-2f8c-4cc0-a7e5-de914ab80bca)
+![Screenshot (85)](https://github.com/user-attachments/assets/1f732a51-01fe-4b73-9d73-5f8588497076)
+![Screenshot (81)](https://github.com/user-attachments/assets/9418d8ca-32b9-4011-be61-101383bfcff2)
+![Screenshot (82)](https://github.com/user-attachments/assets/ad290746-b92a-475c-b599-8ba6d8d2824e)
+![Screenshot (83)](https://github.com/user-attachments/assets/e24d3e84-2b27-450d-a12a-39b51801b5a9)
+![Screenshot (84)](https://github.com/user-attachments/assets/a25584df-7e86-45ae-a0ac-3a865af75552)
+![Screenshot (86)](https://github.com/user-attachments/assets/14b28152-da2f-4ad0-91fd-b18234a4ab6d)
+
