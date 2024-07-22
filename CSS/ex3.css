@@ -2,7 +2,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     background-color: lightgray;
     border: 2px solid gray;
     height: 96vh;
@@ -11,8 +10,8 @@ body {
     .two{
         margin: 4px;
         padding: 4px;
-        border: 3px solid black;
-        width: 42%;
+        
+        width: 33%;
         height: 480px;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
