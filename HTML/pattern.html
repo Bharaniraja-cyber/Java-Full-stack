@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <script>
+        function pattern(){
+            let a = parseInt(document.getElementById("n").value)
+            let res = '';
+
+            for(let i=1;i<=a;i++){
+                
+                for(let j=1;j<=i;j++){
+                    res = res + "* ";
+                }
+                res += "<br>";  
+            }
+            document.getElementById("resultDiv").innerHTML = res;
+        }
+    </script>
+</head>
+<body>
+    Enter your number : <input type="text" id="n" >
+    <br><br>
+    <button onclick="pattern()"> Click</button>
+    <br><br>
+    <div id="resultDiv">
+
+    </div>
+</body>
+</html>

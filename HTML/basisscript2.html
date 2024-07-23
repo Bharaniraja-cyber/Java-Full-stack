@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            document.write("hello");
+        }
+        
+        function add(a,b){
+            let sum = a+b;
+            document.write("sum : "+sum);
+        }
+        function sub(a,b){
+            let sub = a-b;
+            document.write("subtraction : "+sub);
+        }
+        function mul(a,b){
+            let mul = a*b;
+            document.write("multiply : "+mul);
+        }
+        function div(a,b){
+            let div = a/b;
+            document.write("Division : "+div);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myfunction()">click me</button>
+    <br>
+    <button onclick="add(10,20)">Add</button>
+    <br><button onclick="sub(30,20)">subtract</button>
+    <br><button onclick="mul(10,20)">Multiply</button>
+    <br><button onclick="div(10,20)">Division</button>
+    <h1 id="one">Hello Everyone</h1>
+</body>
+</html>

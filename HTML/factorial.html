@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fact(){
+            var a = parseInt(document.getElementById('n1').value);
+            var result = 1;
+
+            for(let i=1;i<=a;i++){
+                result *= i;
+            }
+            document.getElementById("resultDiv").innerHTML = "<b>Factorial is :" + result;
+
+        }
+    </script>
+</head>
+<body>
+    Enter your Number : <input type="text" id="n1">
+    <br><br>
+    <button onclick="fact()">Click me</button>
+    <br><br>
+    <div id="resultDiv">
+        
+    </div>
+</body>
+</html>

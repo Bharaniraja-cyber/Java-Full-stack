@@ -5,38 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
-       
         input{
+            border: 3px solid gray;
             height: 40px;
-            width: 310px;
+            width: 290px;
         }
         .but{
             height: 70px;
             width: 70px;
-            background-color: aqua; 
-            font-weight: bold;
+            background-color:gray;
+            color: #FFFFFF; 
             font-size: 20px;
+            border-radius: 50%;
+            border: 1px solid #505050;
+        }
+        .but2{
+            height: 70px;
+            width: 70px;
+            background-color:#D4D4D2;
+            color: #505050; 
+            font-size: 20px;
+            border-radius: 50%;
+            border: 1px solid #505050;
         }
         .but1{
             height: 70px;
             width: 70px;
-            background-color: rgb(248, 115, 66); 
+            background-color:#FF9500; 
+            color: #FFFFFF;
             font-weight: bold;
             font-size: 20px;
+            border-radius: 50%;
+            border: 1px solid #505050;
         }
-        td{
-            border:4px solid gray;
-        }
+       .cal{
+        border: 5px solid gray;
+        width: fit-content;
+        background-color:  #1C1C1C;;
+        color: #FFFFFF;
+
+       }
+       .but:hover {
+        background-color: #FF9500;
+        color: #FFFFFF;
+}
     </style>
 </head>
 <body>
-    <div>
-        <table border="9">
+    <div class="cal">
+        <table>
             <tr>
                 <td colspan="4"><input type="number"></td>
             </tr>
             <tr>
-                <td><input type="button" class="but1" value="C"></td> <td><input type="button" class="but1" value=" <--"></td> <td> <input type="button" class="but1" value="%"></td> <td><input type="button" class="but1" value="/"></td> 
+                <td><input type="button" class="but2" value="AC"></td> <td><input type="button" class="but2" value=" <--"></td> <td> <input type="button" class="but2" value="%"></td> <td><input type="button" class="but1" value="/"></td> 
             </tr>
             <tr>
                 <td><input type="button" class="but" value="7"></td> <td><input type="button" class="but" value="8"></td> <td><input type="button" class="but" value="9"></td> <td><input type="button" class="but1" value="*"></td> 
