@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-image: url(back2.webp);
+            
+        }
+        .one{
+            width: 200mm;
+            height: 196mm;
+            background-image: url(back2.webp);
+            background-size: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 0.8cm rgba(0,0,0,0.5);
+        }
+        .two{
+            width: 150mm;
+            height: 156mm;
+            background-color: rgba(0, 0, 0, 0.445);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       input{
+        width: 50vh;
+        height: 4vh;
+        background: none;
+        border: none;
+        color: white;
+        border-bottom: 3px solid white;
+       }
+       .loginbutton{
+        width: 50vh;
+        height: 6vh;
+        background-color: lightgreen;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        border-radius: 30px;
+        color: black;
+        font-weight: bold;
+       }
+       #zero{
+        width: auto;
+        height: 2vh;
+       }
+       .three{
+        position: absolute;
+        top: 35px;
+       }
+       img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+       }
+    </style>
+</head>
+<body>
+    <div class="one">
+            <div class="three">
+                <img src="log.jpg">
+            </div>
+            <div class="two">
+                    <center>
+                    <h1 style="color: white;"><i>Login Window</i></h1>
+                    <br>
+                    <input type="text" placeholder="Enter Your Username">
+                    <br><br><br>
+                    <input type="password" placeholder="Enter Your Password">
+                    <br><br>
+                    <br><br>
+                    <input type="checkbox" id="zero"> Agree with <u>terms&Conditions</u>
+                    <br><br>
+                    <br><br>
+                    <input type="button" class="loginbutton" value="Login">   
+                    </center>
+        </div>
+        
+    </div>
+</body>
+</html>
