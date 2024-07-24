@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
-        input{
+        #in{
             border: 3px solid gray;
-            height: 40px;
+            height: 50px;
             width: 290px;
+            font-size: 22px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 3px;
         }
         .but{
             height: 70px;
@@ -45,20 +50,29 @@
         color: #FFFFFF;
 
        }
+
        .but:hover {
         background-color: #FF9500;
         color: #FFFFFF;
 }
     </style>
+    <script>
+    function calculator(){
+        const one = 1;
+        document.getElementById("in").innerHTML = one;
+       
+    }
+</script>
 </head>
 <body>
     <div class="cal">
         <table>
+           
             <tr>
-                <td colspan="4"><input type="number"></td>
+                <td colspan="4"><div id="in"></div></td>
             </tr>
             <tr>
-                <td><input type="button" class="but2" value="AC"></td> <td><input type="button" class="but2" value=" <--"></td> <td> <input type="button" class="but2" value="%"></td> <td><input type="button" class="but1" value="/"></td> 
+                <td><input type="button" class="but2" value="AC" onfocus="this.value"></td> <td><input type="button" class="but2" value=" <--"></td> <td> <input type="button" class="but2" value="%"></td> <td><input type="button" class="but1" value="/"></td> 
             </tr>
             <tr>
                 <td><input type="button" class="but" value="7"></td> <td><input type="button" class="but" value="8"></td> <td><input type="button" class="but" value="9"></td> <td><input type="button" class="but1" value="*"></td> 
@@ -67,7 +81,7 @@
                 <td><input type="button" class="but" value="4"></td> <td><input type="button" class="but" value="5"></td> <td><input type="button" class="but" value="6"></td> <td><input type="button" class="but1" value="-"></td> 
             </tr>
             <tr>
-                <td><input type="button" class="but" value="1"></td> <td><input type="button" class="but" value="2"></td> <td><input type="button" class="but" value="3"></td> <td><input type="button" class="but1" value="+"></td> 
+                <td><input type="button" onclick="calculator()" class="but" value="1"></td> <td><input type="button" class="but" value="2"></td> <td><input type="button" class="but" value="3"></td> <td><input type="button" class="but1" value="+"></td> 
             </tr>
             <tr>
                 <td><input type="button" class="but" value="00"></td> <td><input type="button" class="but" value="0"></td> <td><input type="button" class="but" value="."></td> <td><input type="button" class="but1" value="="></td> 

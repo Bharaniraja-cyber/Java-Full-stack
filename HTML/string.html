@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <p id="demo">
+    </p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        let text = "symbol";
+        let be = "Buy Samsung visit Apple Store";
+        document.getElementById("demo").innerHTML = text.length;
+        document.getElementById("demo7").innerHTML = be.replace("Samsung","Iphone");
+        document.getElementById("demo2").innerHTML = text.toLowerCase();
+        document.getElementById("demo1").innerHTML = text.toUpperCase();
+        document.getElementById("demo3").innerHTML = text.slice(0,2);
+        document.getElementById("demo4").innerHTML = text.charAt(2);
+        document.getElementById("demo5").innerHTML = text.at(0);
+        document.getElementById("demo6").innerHTML = text.concat(" "+text);
+    </script>
+</body>
+</html>
