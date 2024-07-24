@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sum = () => 10+20
+        document.write("Add :"+sum())
+        const sub = (x,y) => x-y
+        document.write("<br>Sub :"+sub(20,10))
+        const mul = (x,y) => {return x*y}
+        document.write("<br>Mul :"+mul(10,20))
+        const div = (x,y) => x/y
+        document.write("<br>Div :"+div(50,5))
+        const big = (x,y) => {
+            if(x>y)
+                return x
+            
+            else
+                return y
+        }
+        document.write("<br>Big number :"+big(10,20))
+    
+        const fact = (x) =>{
+        let result = 1
+        for(let i=1;i<=x;i++)
+            result *= i
+            return result
+        }
+        document.write("<br>Factorial is :"+ fact(5))
+
+        
+    </script>
+</body>
+</html>

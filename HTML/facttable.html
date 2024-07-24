@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+            const Factorial = () => {
+                let n = parseInt(document.getElementById("l").value)
+                let result = "<table border='1' width='30%'>"
+                    result += "<tr><th>number</th><th>fact</th></tr>"
+                
+                for(let k = 1;k <= n;k++){
+                    let fact = 1
+                    for(let i = 1; i <= k; i++){
+                        fact = fact*i
+                    }
+                    result += "<tr><td align=center>"+k+"</td><td>"+fact+"</td></tr>"
+                }
+                result += "</table>"
+                document.getElementById("resultDiv").innerHTML = result
+            }
+            
+        
+    </script>
+</head>
+<body>
+    Enter number : <input type="text" id="l">
+    <br>
+    <button onclick="Factorial()">Click</button>
+    <br>
+    <div id="resultDiv">
+
+    </div>
+</body>
+</html>

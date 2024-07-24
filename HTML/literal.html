@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literal</title>
+    <script>
+        function myfunction(){
+            let skill = ["c" ,"python","c++"];
+            document.write("Array element :"+skill);
+            document.write("<br>First element :"+skill[0]);
+            document.write("<br>last element :"+skill[skill.length-1]);
+            skill.push("java");
+            document.write("<br>Array element :"+skill);
+            skill.pop();
+            document.write("<br>Array element :"+skill);
+            for (let i=0; i<skill.length;i++){
+                document.write("<br>"+skill[i]);
+            }
+        }
+    </script>
+</head>
+<body onload="myfunction()">
+    
+</body>
+</html>
