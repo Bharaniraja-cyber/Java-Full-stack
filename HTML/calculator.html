@@ -100,6 +100,10 @@
         let x = document.getElementById("num").value;
         document.getElementById("num").value = x.slice(0, -1);
         }
+        function e(){
+                let x = form1.number.value
+                form1.number.value = eval(form1.number.value)
+        }
     </script>
 </head>
 <body>
@@ -138,7 +142,7 @@
             <tr>
                 <td colspan="2"><input type="button" class="but3" onclick="form1.number.value += '0'" value="0"></td>
                 <td><input type="button" class="but" onclick="form1.number.value += '.'" value="."></td>
-                <td><input type="button" class="but1" onclick="form1.number.value = eval(form1.number.value)" value="="></td> 
+                <td><input type="button" class="but1" onclick="e()" value="="></td> 
             </tr>
         </table>
     </form>
