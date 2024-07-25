@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
-        #in{
+        body{
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            margin-top: 10%;
+            background-color:whitesmoke;
+        }
+        h3{
+            color: black
+        }
+        input{
             border: 3px solid gray;
             height: 50px;
             width: 290px;
@@ -14,79 +24,120 @@
             justify-content: start;
             align-items: center;
             padding: 3px;
+            border-radius: 10px;
+            background-color:white;
         }
         .but{
-            height: 70px;
-            width: 70px;
-            background-color:gray;
+            height: 65px;
+            width: 65px;
+            background-color:#505050;
             color: #FFFFFF; 
             font-size: 20px;
             border-radius: 50%;
             border: 1px solid #505050;
+            box-shadow: 0 0 0.10cm rgba(0,0,0,0.5);
         }
         .but2{
-            height: 70px;
-            width: 70px;
+            height: 68px;
+            width: 68px;
             background-color:#D4D4D2;
             color: #505050; 
             font-size: 20px;
             border-radius: 50%;
             border: 1px solid #505050;
+            box-shadow: 0 0 0.10cm rgba(0,0,0,0.5);
         }
         .but1{
-            height: 70px;
-            width: 70px;
+            height: 68px;
+            width: 68px;
             background-color:#FF9500; 
             color: #FFFFFF;
             font-weight: bold;
             font-size: 20px;
             border-radius: 50%;
             border: 1px solid #505050;
+            box-shadow: 0 0 0.10cm rgba(0,0,0,0.5);
+        }
+        .but3{
+            height: 60px;
+            width: 145px;
+            background-color:#D4D4D2; 
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 50px;
+            border: 1px solid #505050;
+            box-shadow: 0 0 0.10cm rgba(0,0,0,0.5);
         }
        .cal{
-        border: 5px solid gray;
+        border: 8px double rgb(7, 7, 7);
         width: fit-content;
-        background-color:  #1C1C1C;;
+        background-color:rgb(254, 254, 172);
         color: #FFFFFF;
-
+        border-radius: 11px;
+        padding: 5px
        }
 
-       .but:hover {
+       .but:hover ,.but3:hover{
         background-color: #FF9500;
         color: #FFFFFF;
-}
+        }
+
+        .but2:hover{
+            background-color: #505050;
+            color: white;
+        }
+        .but1:hover{
+            background-color: #D4D4D2;
+            color: black;
+        }
     </style>
     <script>
-    function calculator(){
-        const one = 1;
-        document.getElementById("in").innerHTML = one;
-       
-    }
-</script>
+        function clr() { 
+            document.getElementById("num").value = "" 
+        }
+    </script>
 </head>
 <body>
     <div class="cal">
-        <table>
-           
+        <form name="form1">
+        <table id="calcu">
             <tr>
-                <td colspan="4"><div id="in"></div></td>
+                <td colspan="4"><input type="text" name="number" id="num" placeholder="0"></input></td>
+            </tr>
+            <center><h3><b><i>Casio</i></b></h3></center>
+            <tr></tr><tr></tr>
+            <tr>
+                <td><input type="button" class="but2" onclick="clr()" value="AC"></td>
+                <td><input type="button" class="but2" onclick="form1.number.value += '<='" value=" <="></td>
+                <td><input type="button" class="but2" onclick="form1.number.value += '%'" value="%"></td>
+                <td><input type="button" class="but1" onclick="form1.number.value += '/'" value="/"></td> 
             </tr>
             <tr>
-                <td><input type="button" class="but2" value="AC" onfocus="this.value"></td> <td><input type="button" class="but2" value=" <--"></td> <td> <input type="button" class="but2" value="%"></td> <td><input type="button" class="but1" value="/"></td> 
+                <td><input type="button" class="but" onclick="form1.number.value += '7'" value="7"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '8'" value="8"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '9'" value="9"></td>
+                <td><input type="button" class="but1" onclick="form1.number.value += '*'" value="X"></td> 
             </tr>
             <tr>
-                <td><input type="button" class="but" value="7"></td> <td><input type="button" class="but" value="8"></td> <td><input type="button" class="but" value="9"></td> <td><input type="button" class="but1" value="*"></td> 
+                <td><input type="button" class="but" onclick="form1.number.value += '4'" value="4"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '5'" value="5"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '6'" value="6"></td>
+                <td><input type="button" class="but1" onclick="form1.number.value += '-'" value="-"></td> 
             </tr>
             <tr>
-                <td><input type="button" class="but" value="4"></td> <td><input type="button" class="but" value="5"></td> <td><input type="button" class="but" value="6"></td> <td><input type="button" class="but1" value="-"></td> 
+                <td><input type="button" class="but" onclick="form1.number.value += '1'" value="1"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '2'" value="2"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '3'" value="3"></td>
+                <td><input type="button" class="but1" onclick="form1.number.value += '+'" value="+"></td> 
             </tr>
             <tr>
-                <td><input type="button" onclick="calculator()" class="but" value="1"></td> <td><input type="button" class="but" value="2"></td> <td><input type="button" class="but" value="3"></td> <td><input type="button" class="but1" value="+"></td> 
-            </tr>
-            <tr>
-                <td><input type="button" class="but" value="00"></td> <td><input type="button" class="but" value="0"></td> <td><input type="button" class="but" value="."></td> <td><input type="button" class="but1" value="="></td> 
+                <td colspan="2"><input type="button" class="but3" onclick="form1.number.value += '0'" value="0"></td>
+                <td><input type="button" class="but" onclick="form1.number.value += '.'" value="."></td>
+                <td><input type="button" class="but1" onclick="form1.number.value = eval(form1.number.value)" value="="></td> 
             </tr>
         </table>
+    </form>
     </div>
 </body>
 </html>
