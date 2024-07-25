@@ -96,6 +96,10 @@
         function clr() { 
             document.getElementById("num").value = "" 
         }
+        function back() {
+        let x = document.getElementById("num").value;
+        document.getElementById("num").value = x.slice(0, -1);
+        }
     </script>
 </head>
 <body>
@@ -109,8 +113,8 @@
             <tr></tr><tr></tr>
             <tr>
                 <td><input type="button" class="but2" onclick="clr()" value="AC"></td>
-                <td><input type="button" class="but2" onclick="form1.number.value += '<='" value=" <="></td>
                 <td><input type="button" class="but2" onclick="form1.number.value += '%'" value="%"></td>
+                <td><input type="button" class="but2" onclick="back()" value=" <="></td>
                 <td><input type="button" class="but1" onclick="form1.number.value += '/'" value="/"></td> 
             </tr>
             <tr>
