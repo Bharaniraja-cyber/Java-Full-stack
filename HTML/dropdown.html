@@ -5,16 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body{
+        padding: 20px;
+        background-color: azure;
+      }
+      h4{
+        text-align: center;
+      }
+      #ul,.dropdown-menu{
+        background-color:thistle;
+      }
+      .list-group-item{
+        background-color:lavender;
+      }
+    </style>
+    </head>
     <body>
+      
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
             <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
+            <div class="dropdown-menu">
+              <h4>DataBases</h4>
+              <ul class="list-group-item" id="ul">
+              <li class="dropdown-item list-group-item"><a href="#">MySQL</a></li>
+              <li class="dropdown-item list-group-item"><a href="#">SQL Server</a></li>
+              <li class="dropdown-item list-group-item"><a href="#">SQLite</a></li>
             </ul>
+            <h4>Programming</h4>
+            <ul class="list-group-item" id="ul">
+            <li class="dropdown-item list-group-item"><a href="#">Java</a></li>
+            <li class="dropdown-item list-group-item"><a href="#">.NET</a></li>
+            <li class="dropdown-item list-group-item"><a href="#">Python</a></li>
+          </ul>
+
           </div>
+          
+            
+       
+        </div>
 </html>
