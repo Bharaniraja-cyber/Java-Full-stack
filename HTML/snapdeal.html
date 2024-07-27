@@ -9,30 +9,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
                             
-        #button{
-            background-color: black;
-            color: white;
-            width: 130px;
-            position: sticky;
-            height: 38px;
-            text-align: center;
-            border: none;
-        }
       
         #rose{
             background-color: #e40046;
             width: 100%;
-            height: 100px;
+            height: 95px;
             display: flex;
             margin: 0 auto;
             align-items: center;
-            position: fixed;
+            position: absolute;
             font-size: 14px;
            
         }
         .btn{
             text-decoration: none;
             color: white;
+            font-size: 14px;
            
         }
        .cont{
@@ -40,16 +32,13 @@
         font-size: 12px;
         color: white;
         background-color: rgba(0, 0, 0, 0.144);
-        position: sticky;
-        height: 30px;
+        position: absolute;
+        height: 25px;
         padding: 7x;
         display: block;
-        
-
-        
     }
     .a{
-        padding-left: 570px;
+        padding-left: 50%;
        
     }
     a{
@@ -59,16 +48,30 @@
     }
     .input-group{
         width: 60%;
-        height: 38px;
+        height: 35px;
         border-radius: 10px;
         border: none;
-        position:static
+        position:static;
     }
-    .container-fluid{
+    #button{
+            background-color: black;
+            color: white;
+            width: 130px;
+            position: sticky;
+            height: 35px;
+            text-align: center;
+            border: none;
+        }
+      
+    .row{
         font-size: 12px;
         width: 220px;
-       background-color: aliceblue;
-       margin: 40px ;
+       background-color: rgb(255, 255, 255);
+        height: 775px;
+       margin-left: 80px ;
+       margin-top: 50px;
+       position: absolute;
+       box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
     }
     .img{
         width: 30px;
@@ -77,25 +80,57 @@
     }
     .list-group-item{
         border: none;
+        height: fit-content;
     }
-    
+    body{
+        background-color: #f7f7f7;;
+    }
+    #col1{
+        background-color: white;
+        height: 325px;
+        width: 907px;
+        margin-left: 20%;
+        box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    #btn{
+        border-bottom: 2px solid black;
+        border-radius: 0 ;
+    }
+    #col2{
+        background-color: white;
+        height: 400px;
+        width: 85vw;
+        margin-left: 20%;
+        display: flex;
+    }
+    .one{
+        padding: 20px;
+        width: 240px;
+        font-size: 12px;
+    }
+    .one:hover{
+        box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    #but3{
+        border: 3px solid #f7f7f7;
+        background-color: white;
+    }
+    #row{
+        width: 200px;
+        padding: 0;
+        margin-left: 80px;
+        font-size: 11px;
+        display: flex;
+    }
     </style>
 
 </head>
 <body>
-<div class="container-fixed">
+<class="container-fixed">
     <div class="row" id="rose">
-        <div class="cont">
-            &emsp;&emsp;&emsp;Brand Waali Quality,Bazaar Waali deal!       
-            <a href="" class="a">Impact@snapdeal</a>&emsp;&emsp;
-            <a href="" >Help center</a>&emsp;&emsp;
-            <a href="" >Sell on snapdeal</a>&emsp;&emsp;
-            <a href="" ><i class="bi bi-phone"></i>Download App</a>&emsp;&emsp;
-            <a href="" >Donate for elderly</a>
+        &emsp;&emsp;&emsp; <div class="col-2"><img src="sdLatestLogo.svg" height="30" width="132">
         </div>
-        &emsp;&emsp; <div class="col-2"><img src="sdLatestLogo.svg" height="30" width="132">
-        </div>
-        &emsp;<div class="col-1 input-group"><input type="text" class="input-group" placeholder="&emsp;&emsp;search products & brands"><button type="button" class="input-group-text btn-xs btn-success" id="button"><i class="bi bi-search"></i>Search</button></div>
+        &emsp;<div class="col-2 input-group"><input type="text" class="input-group" placeholder="&emsp;&emsp;search products & brands"><button type="button" class="input-group-text btn-xs btn-success" id="button"><i class="bi bi-search"></i>Search</button></div>
         
     <div class="col">
         <button type="button" class="btn btn-link btn-lg">cart<sub><i class="bi bi-cart"></i></sub></button>
@@ -103,6 +138,14 @@
     <div class="col">
         <a style="color: white;">Sign in&emsp;<img src="person-circle (1).svg" height="30" width="30"></a>
        
+    </div>
+    <div class="cont">
+        &emsp;&emsp;&emsp;&emsp;Brand Waali Quality,Bazaar Waali deal!       
+        <a href="" class="a">Impact@snapdeal</a>&emsp;&emsp;
+        <a href="" >Help center</a>&emsp;&emsp;
+        <a href="" >Sell on snapdeal</a>&emsp;&emsp;
+        <a href="" ><i class="bi bi-phone"></i>Download App</a>&emsp;&emsp;
+        <a href="" >Donate for elderly</a>
     </div>
     </div>
 <br><br><br>
@@ -113,29 +156,111 @@
     <div class="row">
         <div class="col">
             <br>
-    <h6 style="font-size: 14px;">&emsp;&emsp;Top Catogories</h6>
+            <h6 style="font-size: 13px;">&emsp;TOP CATEGORIES</h6>
     <ul class="list-group">
-        <li class="list-group-item"><img src="i1.avif" class="img">&emsp;Men's Fashion</li>
-        <li class="list-group-item"><img src="i1.avif" class="img">&emsp;Women's Fashion</li>
-        <li class="list-group-item"><img src="i1.avif" class="img">&emsp;Home & Kitchen</li>
-        <li class="list-group-item"><img src="i1.avif" class="img">&emsp;Men Fashion</li>
-        <li class="list-group-item"><img src="i1.avif" class="img">&emsp;Toys for Kid's</li>
-        <li class="list-group-item">Beauty, Health & daily</li>
-        <li class="list-group-item">Men Fashion</li>
-        <li class="list-group-item">Men Fashion</li>
-        <li class="list-group-item">Men Fashion</li>
+        <li class="list-group-item"><img src="https://n1.sdlcdn.com/imgs/k/v/x/Men_sitenavigation-b972a.jpg" class="img">&emsp;Men's Fashion</li>
+        <li class="list-group-item"><img src="https://n1.sdlcdn.com/imgs/k/v/x/WoMen_sitenav-5a8ca.jpg" class="img">&emsp;Women's Fashion</li>
+        <li class="list-group-item"><img src="https://n1.sdlcdn.com/imgs/k/v/x/HOme_sitenavigation-d7a00.jpg" class="img">&emsp;Home & Kitchen</li>
+        <li class="list-group-item"><img src="https://n4.sdlcdn.com/imgs/k/v/x/Toys_Sitenavigation-ef666.jpg" class="img">&emsp;Toys for Kid's</li>
+        <li class="list-group-item"><img src="https://n2.sdlcdn.com/imgs/k/v/x/Beauty_Site_navigation-5f3be.jpg" class="img">&emsp;Beauty, Health & daily</li>
+        &emsp;
+        <h6 style="font-size: 13px;">&emsp;MORE CATEGORIES</h6>
+        <li class="list-group-item">Automatives</li>
+        <li class="list-group-item">Mobile & Accessories</li>
+        <li class="list-group-item">Electronics</li>
+        <li class="list-group-item">Sports, Fitness & outdoor</li>
+        <li class="list-group-item">Computers & Gaming</li>
+        <li class="list-group-item">Books, Media & Music</li>
+        <li class="list-group-item">Hobbies</li>
+        &emsp;
+        <h6 style="font-size: 13px;">&emsp;TRENDING SEARCHES</h6>
+        <li class="list-group-item"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png">&emsp;Kitchen Product</li>
+        <li class="list-group-item"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png">&emsp;Shoes for Men</li>
+        <li class="list-group-item"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png">&emsp;Kurti Set</li>
+        <li class="list-group-item"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png">&emsp;Sandai Men</li>
+        <li class="list-group-item"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png">&emsp;Sport Shoe Men</li>
     </ul>
     </div>
+   
 </div>
+<br><br>
+    <div class="col" id="col1">
+        <img src="https://n2.sdlcdn.com/imgs/k/s/i/ethnicwear-ef4d9.jpg" alt="">
+        <button type="button" class="btn" id="btn" style="color: black; width: 179px;">ONDC</button>
+        <button type="button" class="btn" style="color: black; width: 179px;">BOB Card</button>
+        <button type="button" class="btn" style="color: black; width: 179px;">ETHNIC WEAR</button>
+        <button type="button" class="btn" style="color: black; width: 179px;">KITCHENWARE</button>
+        <button type="button" class="btn" style="color: black; width: 165px;">HOME FURNISHING</button>
+    </div>
+<br><br>
+<h5 style="margin-left: 360px;">TRENDING PRODUCTS</h5>
+<br>
+    <div class="col" id="col2">
+        <div class="one">
+            <img src="https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" width="220px" height="250px">
+            <p>Shiv Trishual Damru Gold-plated Locket with Rudraksha Mala</p>
+            <p>star</p>
+            <p><del>Rs 399</del> Rs 142 <button id="but3">64%OFF</button></p>
+        </div>
+        <div class="one">
+            <img src="https://t1.sdlcdn.com/imgs/k/e/u/large/Veirdo-100-Cotton-Regular-Fit-SDL051246309-1-51a91.jpg" alt="" width="220px" height="250px">
+            <p>Veirdo-Multicolor Cotton Regular Fit Men's T-shirt</p>
+            <p>star</p>
+            <p><del>Rs 1199</del> Rs 300 <button id="but3">64%OFF</button></p>
+        </div>
+        <div class="one">
+            <img src="https://t2.sdlcdn.com/imgs/j/d/1/large/Aadi-Black-Casual-Shoes-SDL452425212-3-254be.jpeg" alt="" width="220px" height="250px">
+            <p>Aadi Black Casual Shoes</p>
+            <p>star</p>
+            <p><del>Rs 999</del> Rs 362 <button id="but3">64%OFF</button></p>
+        </div>
+        <div class="one">
+            <img src="https://t3.sdlcdn.com/imgs/i/z/j/large/bc12-606ed.jpg" alt="" width="220px" height="250px">
+            <p>Maxbell USB Reachargeable Electronic Flameless Lighter</p>
+            <p>star</p>
+            <p><del>Rs 899</del> Rs 176 <button id="but3">80%OFF</button></p>
+        </div>
+        <div class="one">
+            <img src="https://t3.sdlcdn.com/imgs/i/u/v/large/HeelSocks1-aeb5a.jpg" alt="" width="220px" height="250px">
+            <p>Stay Healthy - Foot Protector (Free Size)</p>
+            <p>star</p>
+            <p><del>Rs 899</del> Rs 96 <button id="but3">89%OFF</button></p>
+        </div>
+        <div class="one">
+            <img src="https://t3.sdlcdn.com/imgs/h/r/s/large/Shiv-Shakti-Kavach-5-Mukhi-SDL772359305-1-3b306.jpeg" alt="" width="210px" height="240px">
+            <p>Shiv Shiv-Shakti-Kavach-5-Mukhi Rudraksha Mala</p>
+            <p>star</p>
+            <p><del>Rs 399</del> Rs 189 <button id="but3">53%OFF</button></p>
+        </div>
+    </div>
+    <div class="col" id="row">
+        <div>
+            <img src="https://i1.sdlcdn.com/img/snapdeal/barCode_Home1x.png" alt="">
+        </div>
+        &emsp;
+        <div>
+        <p><b>Enjoy Convenient<br> order Tracking</b><br> Scan to download app</p>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-
-
-
-
+<br><br>
+<div class="container-fluid" id="cont">
+    <div>
+        <img src="Screenshot 2024-07-27 183506.png" height="400px" width="400px" style="margin-left: 50px;">
+    </div>
+    <div class="container">
+        <h3>Download Snapdeal<br> App Now</h3>
+        <p>Fast, Simple & Delightful.<br>All it takes is 30 seconds to Download</p>
+    </div>
+</div>
+<style>
+    #cont{
+        width: 80%;
+        height: 400px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+</style>
 </body>
 </html>
