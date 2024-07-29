@@ -1,0 +1,45 @@
+<h1>Welcome to Angular</h1>
+
+<br><h1>Interpolation Binding</h1>
+  <h4>
+  <br>
+name : {{name}}
+<br>
+age : {{age}}
+<br>
+email: {{email}}
+<br>
+Addition : {{getadd(10,20)}}
+<br>
+Multiplication :{{getmul(20,45)}}
+
+<br>
+
+<h1>Property Binding</h1>
+<font [color]="txtcolor">
+name : <input type="text" [value]="name">
+<br>
+age : <input type="text" [value]="age">
+<br>
+email: <input type="text" [value]="email">
+<br>
+Addition : <input type="text" [value]="getadd(10,20)">
+<br>
+Multiplication :<input type="text" [value]="getmul(20,45)">
+
+</font>
+<br>
+<br>
+<h1>Event Binding</h1>
+<br>
+<button (click) = "change()">change</button>
+<br>
+<img [src]="img">
+
+
+
+</h4>
+
+  <!--
+  <app-child></app-child>
+  -->
