@@ -1,0 +1,12 @@
+*{
+    margin-left: 50px;
+}
+
+.list-group-item{
+    width: 100px;
+    background-color: lightsalmon;
+    border: 2px dotted black;
+}
+.input-group{
+    width: 300px;
+}

@@ -1,3 +1,6 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--
+
 <h1>Welcome to Angular</h1>
 
 <br><h1>Interpolation Binding</h1>
@@ -32,14 +35,59 @@ Multiplication :<input type="text" [value]="getmul(20,45)">
 <br>
 <h1>Event Binding</h1>
 <br>
-<button (click) = "change()">change</button>
+<button (click) = "changeName()">change</button>
 <br>
 <img [src]="img">
 
-
+<br>
 
 </h4>
+<app-child></app-child>
+-->
 
-  <!--
-  <app-child></app-child>
-  -->
+<h2>Two Way Binding</h2>
+<p>Enter you name : <input type="text" [(ngModel)]="fname" class="input-group"></p>
+<b>Welcome {{fname}}</b>
+
+<h1>Angular Structural Directives</h1>
+<button type="button" (click)="hide()" class="btn btn-danger">hide & seek</button>
+
+<br><br>
+<div *ngIf="flag" [style] = "mystyle">
+  <ul class="list-group">
+    Vehicle
+    <li *ngFor="let vec of vehicles" (click)="setselect(vec)" class="list-group-item">{{vec}}</li>
+  </ul>
+  <br>
+  <b>Selected Vehicle is : {{selectedvehicle}}</b>
+  <br>
+  <div [ngSwitch]="selectedvehicle">
+    <font  *ngSwitchCase="'Bike'"><button class="btn btn-success">Royal Enfield</button></font>
+    <font  *ngSwitchCase="'Car'"><button  class="btn btn-info" (click)="bmw()">BMW</button></font>
+    <font  *ngSwitchCase="'Cycle'"><button  class="btn btn-primary">Fire Fox</button></font>
+    <font color="green" *ngSwitchDefault>Invalid</font>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,12 +11,21 @@ export class AppComponent {
   email : String;
   txtcolor:String;
   img : String;
+  flag : Boolean
+  fname : String
+  vehicles : String[];
+  selectedvehicle : String =" ";
+  mystyle : {};
 constructor(){
   this.name = "bharani"
   this.age = 20;
   this.email = "bharaniraja21@gmail.com" ;
   this.txtcolor = "green";
   this.img = "https://n1.sdlcdn.com/imgs/k/v/x/Men_sitenavigation-b972a.jpg"
+  this.fname = " ";
+  this.flag = false;
+  this.vehicles = [ "Bike","Car","Cycle"];
+  this.mystyle = {'width' : '20%' ,'border' : '3px double black','border-radius' : '15px' }
 }
 
 getadd(a:number,b:number){
@@ -29,8 +38,14 @@ getmul(a:number,b:number){
   return multiply
 }
 
-change() {
+changeName() {
   this.name = "bharaniraja"
+}
+hide(){
+  this.flag = ! this.flag
+}
+setselect(vec :String){
+    this.selectedvehicle = vec;
 }
 
 }
