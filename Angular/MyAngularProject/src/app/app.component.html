@@ -42,9 +42,9 @@ Multiplication :<input type="text" [value]="getmul(20,45)">
 <br>
 
 </h4>
-<app-child></app-child>
 -->
 
+<!-- 
 <h2>Two Way Binding</h2>
 <p>Enter you name : <input type="text" [(ngModel)]="fname" class="input-group"></p>
 <b>Welcome {{fname}}</b>
@@ -63,19 +63,32 @@ Multiplication :<input type="text" [value]="getmul(20,45)">
   <br>
   <div [ngSwitch]="selectedvehicle">
     <font  *ngSwitchCase="'Bike'"><button class="btn btn-success">Royal Enfield</button></font>
-    <font  *ngSwitchCase="'Car'"><button  class="btn btn-info" (click)="bmw()">BMW</button></font>
+    <font  *ngSwitchCase="'Car'"><button  class="btn btn-info">BMW</button></font>
     <font  *ngSwitchCase="'Cycle'"><button  class="btn btn-primary">Fire Fox</button></font>
     <font color="green" *ngSwitchDefault>Invalid</font>
 
   </div>
+</div> -->
+
+
+
+
+<table class="table table-bordered text-center table-warning">
+  <tr>
+    <th><a routerLink="/home">Home</a></th>
+    <th><a routerLink="/contact">Contact</a></th>
+    <th><a routerLink="/about">About</a></th>
+  </tr>
+</table>
+<br>
+<div>
+  <router-outlet></router-outlet>
 </div>
 
 
+<div id="one">
 
-
-
-
-
+</div>
 
 
 

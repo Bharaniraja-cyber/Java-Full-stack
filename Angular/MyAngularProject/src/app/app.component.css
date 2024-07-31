@@ -10,3 +10,7 @@
 .input-group{
     width: 300px;
 }
+
+a{
+    text-decoration: none;
+}
