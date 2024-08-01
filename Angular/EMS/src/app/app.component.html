@@ -1,10 +1,4 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    </head>
 
-    <body>
-        <br>
         <div class="container">
             <div class="row justify-content-center">
               <h1><i>Employee Management System</i></h1>
@@ -21,15 +15,16 @@
                                            required
                                            pattern="[0-9]+"
                                             />
+                                            <div *ngIf="empId.touched">
+                                                <div *ngIf="empId.errors?.['required']">
+                                                    <p>EmployeeId is required</p>
+                                                </div>
+                                                <div *ngIf="empId.errors?.['pattern']">
+                                                    <p>Invalid EmployeeId</p>
+                                                </div>
+                                            </div>
                                 </div>
-                                <!-- <div *ngIf="empId.touched">
-                                    <div *ngIf="empId.errors?.['required']">
-                                        <b>EmployeeId is required</b>
-                                    </div>
-                                    <div *ngIf="empId.errors?.['pattern']">
-                                        <b>Invalid EmployeeId</b>
-                                    </div>
-                                </div> -->
+                               
                                 <div class="form-group">
                                     <label for="Employee Name">
                                         Employee Name
@@ -38,7 +33,17 @@
                                            class="form-control" 
                                            name="empName" 
                                            #empName="ngModel" ngModel
+                                           required
+                                           pattern="[a-z,A-Z]+"
                                             />
+                                            <div *ngIf="empName.touched">
+                                                <div *ngIf="empName.errors?.['required']">
+                                                    <p>EmployeeName is required</p>
+                                                </div>
+                                                <div *ngIf="empName.errors?.['pattern']">
+                                                    <p>Invalid Name</p>
+                                                </div>
+                                            </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="Employee Salary">
@@ -48,11 +53,22 @@
                                            class="form-control" 
                                            name="empSalary" 
                                            #empSalary="ngModel" ngModel
+                                           required
+                                           pattern="[0-9]+"
                                            />
+
+                                           <div *ngIf="empSalary.touched">
+                                            <div *ngIf="empSalary.errors?.['required']">
+                                                <p>Employee Salary is required</p>
+                                            </div>
+                                            <div *ngIf="empSalary.errors?.['pattern']">
+                                                <p>Invalid Salary Amount</p>
+                                            </div>
+                                        </div>
                                 </div>
-                                
                                
-                                <button class="btn btn-success">
+                               
+                                <button class="btn btn-success" (click)="insertEmployee(myForm.value)">
                                     Insert 
                                 </button>
                             &nbsp;&nbsp;
@@ -74,7 +90,4 @@
                         </div>
                     </div>
                 </div>
-         
-    </body>
-</html>
 
