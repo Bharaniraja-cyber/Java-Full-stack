@@ -1,5 +1,5 @@
 export class Employee{
-    empId: number = 0
+    id: string = ""
     empName: string =""
-    empSalary:number = 0
+    empSalary:string = ""
 }
