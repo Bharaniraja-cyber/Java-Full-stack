@@ -3,12 +3,12 @@
     {
       "id": "73772126108",
       "empName": "Bharaniraja",
-      "empSalary": "45"
+      "empSalary": "45000"
     },
     {
       "id": "73772126104",
       "empName": "Akshatha",
-      "empSalary": "04"
+      "empSalary": "40000"
     },
     {
       "id": "73772126109",
@@ -16,14 +16,19 @@
       "empSalary": "123000"
     },
     {
-      "id": "73772126127",
-      "empName": "Nesan",
-      "empSalary": "27"
+      "id": "73772126141",
+      "empName": "Rahul",
+      "empSalary": "45200"
     },
     {
-      "id": "73772126128",
-      "empName": "Mathiveendhan",
-      "empSalary": "28"
+      "id": "73772126127",
+      "empName": "Nesan",
+      "empSalary": "25000"
+    },
+    {
+      "id": "73772126142",
+      "empName": "Ramesh",
+      "empSalary": "54320"
     }
   ]
 }
